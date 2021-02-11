@@ -3,22 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./commonstyles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
   <script defer src="./Hex-RGB.js"></script>
   <title>Color Converter</title>
 </head>
 <body>
-  <header>
-    <h1>Color Converter</h1>
+  <header class="navbar">
+    <div style="font-size: 30px;">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</div>
+    
+    <div class="dropdown-nav">Color Converter <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
+      <div class="dropdown-content">
+        <a href="#">Hex-RGB Converter</a>
+        <a href="./RGB-HEX.html">RGB-Hex Converter</a>
+        </div>
+      </div>
+
+      <div class="other-websites">
+        <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
+      </div>
+      <div class="other-websites">
+        <a href="https://my-time-stamp-converter.netlify.app/epochtohuman" target="_blank">Time Converter</a>
+      </div> 
+      <div class="other-websites">
+        <a href="https://my-number-base-converter.netlify.app/decimaltobinary" target="_blank">Number Base Converter</a>
+      </div>
+      <div class="other-websites">
+        <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
+      </div>
+      <div class="other-websites">
+        <a href="#" >Unit Converters</a>
+      </div >      
   </header>
-  
-  <nav>
-    <p>Check out other color converters here:</p>
-    <a href= "./RGB-HEX.html">RGB-HEX Converter</a>
-    <br><br>
-    <a href= "#">HEX-RGB Converter</a>            
-  </nav>
 
   <main>
+    <div style="text-align: center;">
     <h2>Hex-RGB Converter</h2>
     <label for="hex-input">Enter the hex value:</label>
     <input type="text" id="hex-input" placeholder="#000000"></input>
@@ -29,22 +49,24 @@
     <br><br>
     <label for="hex-value">The RGB values are: </label><br><br>
     <label for="red">Red Value: </label>
-    <input type="text" id="red" placeholder="The red value will appear here."></input>
+    <input type="text" id="red" placeholder="The red value will appear here." cols="30"></input>
     <br><br>
     <label for="green">Green Value: </label>
     <input type="text" id="green" placeholder="The green value will appear here."></input>
     <br><br>
     <label for="blue">Blue Value: </label>
     <input type="text" id="blue" placeholder="The blue will appear here."></input>
-    <br><br>    
+  </div>    
   </main>
-  <hr>
-
-  <footer>
-    Contact me
-
-
-
+  <footer style="background-color:#24292e;">
+    <div class="footer-info" style="text-align: center;color:white;">
+      <p style="padding-top: 10px;">Check out my profiles here:</p>
+       <div class="footer-logo" >
+         <a href="https://www.linkedin.com/in/subham-mitra/" target="_blank"><img src="Images/linkedin.svg"></a>
+         <a style="margin-left: 10px;margin-right: 10px;" href="https://github.com/subham2107" target="_blank"><img src="Images/github.svg"></a>
+         <a href="https://twitter.com/subham2107" target="_blank"><img src="Images/twitter.svg"></a>
+        </div>
+    </div>
   </footer>
 
   
