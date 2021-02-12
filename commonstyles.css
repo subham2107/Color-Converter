@@ -4,6 +4,7 @@ body{
   font-family: 'Work Sans', sans-serif;
   color:rgb(77, 80, 83);
 }
+
 #encode-button,
 #decode-button,
 #generate-button,
@@ -112,6 +113,18 @@ font-family: inherit;
 .content-info a:hover{
   text-decoration:underline;
 
+}
+
+.footer-wrapper{
+  min-height: 45px;
+}
+
+.non-footer {
+  min-height: calc(100vh - 17px);
+}
+
+.footer-logo{
+  padding-bottom: 10px;
 }
 
 .footer-logo img{
