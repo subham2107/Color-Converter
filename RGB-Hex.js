@@ -23,6 +23,15 @@ const green=document.querySelector('#green-input');
 const hex=document.querySelector('#hex-value');
 const colorOutput=document.querySelector('#output-color');
 const convertButton=document.querySelector('#convert-button');
+const resetButton=document.querySelector('#reset-button');
+
+resetButton.addEventListener('click',()=>{
+   hex.value = "";
+   red.value = "";
+   green.value = "";
+   blue.value = "";
+   colorOutput.style.backgroundColor="#ffffff";
+});
 
 convertButton.addEventListener('click', () => {
 hex.value=rgbToHex(red.value,green.value,blue.value);

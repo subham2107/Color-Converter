@@ -4,6 +4,15 @@ const convertButton=document.querySelector('#convert-button');
 const red=document.querySelector('#red');
 const green=document.querySelector('#green');
 const blue=document.querySelector('#blue');
+const resetButton=document.querySelector('#reset-button');
+
+resetButton.addEventListener('click',()=>{
+  hex.value = "";
+  red.value = "";
+  green.value = "";
+  blue.value = "";
+  colorOutput.style.backgroundColor="#ffffff";
+});
 
 hex.addEventListener('input',()=>{
   colorOutput.style.backgroundColor=hex.value;

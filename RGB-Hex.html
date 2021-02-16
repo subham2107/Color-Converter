@@ -12,7 +12,7 @@
 <body>
   <div class="non-footer">
   <header class="navbar">
-    <div style="font-size: 30px;">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</div>
+    <div style="font-size: 30px;"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
     
     <div class="dropdown-nav">Color Converter <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
       <div class="dropdown-content">
@@ -42,24 +42,40 @@
   <main>
     <div style="text-align: center;">
     <h2>RGB-Hex Converter</h2>
+    <div style="margin-bottom: 30px;">
     <label for="red">Red Value: </label>
-    <input type="text" id="red-input" placeholder="Enter the red color value."></input>
-    <br><br>
+    <input style="margin-left: 15px;" type="text" id="red-input" placeholder="0-255"></input>
+    </div>
+    <div style="margin-bottom: 30px;">
     <label for="green">Green Value: </label>
-    <input type="text" id="green-input" placeholder="Enter the green color value."></input>
-    <br><br>
+    <input type="text" id="green-input" placeholder="0-255"></input>
+  </div>
+  <div style="margin-bottom: 30px;">
     <label for="blue">Blue Value: </label>
-    <input type="text" id="blue-input" placeholder="Enter the blue color value."></input>
-    <br><br>
+    <input style="margin-left: 14px;" type="text" id="blue-input" placeholder="0-255"></input>
+  </div>
+  <div style="margin-bottom: 30px;">
     <input type="button" id="convert-button" value= "Convert">
-    <br><br>
+    <input type="button" id="reset-button" value= "Reset">
+  </div>
+  <div style="margin-bottom: 30px;">
     <label for="hex-value">The HEX value is: </label>
     <input type="text" id="hex-value" placeholder="The result will appear here."></input>
-    <br><br>
+    <h3>Output Color:</h3>
+  </div>
     <textarea type="text" id="output-color" rows="15" cols="60"></textarea>
     </div>
     
   </main>
+  <section>
+    <div class="content-info" style="text-align: justify;">
+    <h3 style="padding-top: 10px;text-align: center;">What is color converter?</h3>
+    <p>It takes input in the form of values for Red, Green and Blue ranging from 0 to 255 and then converts those values to a hexadecimal string that can be used to specify color in html/css code. Photo editing software usually represents color in RGB and therefore if you would like to use the colors you use in your photo editing software as the background of your html element then you will have to get the hexadecimal representation of the RGB values. This tool allows you to get those values.</p>
+      <p>A "color model" is an abstract mathematical model describing the way colors can be represented as tuples of numbers (e.g. triples in RGB or quadruples in CMYK); however, a color model with no associated mapping function to an absolute color space is a more or less arbitrary color system with no connection to any globally understood system of color interpretation. </p>
+     <p>You can check out more about it 
+       <a style="color:#388bfd;" href ="https://en.wikipedia.org/wiki/Color_space" target="_blank">here.</a></p>
+      </div> 
+    </section>
 </div>
   <div class="footer-wrapper">
   <footer style="background-color:#24292e;">
