@@ -34,19 +34,20 @@
         <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
       </div>
       <div class="other-websites">
-        <a href="#" >Unit Converters</a>
-      </div >      
+        <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
+      </div >     
   </header>
 
-  <main class="main-content">  
-    <h2>Hex-RGB Converter</h2>
-    <div style="margin-bottom: 30px;">
+  <main >  
+    <h2 style="text-align: center;">Hex-RGB Converter</h2>
+    <div class="input-output">
+    <div >
     <label for="hex-input">Enter the hex value:</label>
     <input type="text" id="hex-input" placeholder="#000000"></input>
   </div>
-  <h3>Input Color:</h3>
+  <h3 style="text-align: center;">Input Color:</h3>
   <div style="margin-bottom: 30px;">
-    <textarea type="text" id="output-color" rows="15" cols="60"></textarea>
+    <textarea type="text" id="output-color" rows="15" cols="60" readonly></textarea>
   </div>
   <div style="margin-bottom: 30px;">
     <input type="button" id="convert-button" value= "Convert">
@@ -57,16 +58,17 @@
     </div>
     <div style="margin-bottom: 30px;">
     <label for="red">Red Value: </label>
-    <input style="margin-left: 15px;" type="text" id="red" placeholder="0-255" ></input>
+    <input style="margin-left: 15px;" type="text" id="red" placeholder="0-255" readonly></input>
   </div>
   <div style="margin-bottom: 30px;">
     <label for="green">Green Value: </label>
-    <input type="text" id="green" placeholder="0-255"></input>
+    <input type="text" id="green" placeholder="0-255" readonly></input>
   </div>
-  <div style="margin-bottom: 30px;">
+  <div>
     <label style="margin-left: 14px;" for="blue">Blue Value: </label>
-    <input type="text" id="blue" placeholder="0-255"></input>
-  </div>    
+    <input type="text" id="blue" placeholder="0-255" readonly></input>
+  </div> 
+    </div>   
   </main>
   <section>
     <div class="content-info" style="text-align: justify;">

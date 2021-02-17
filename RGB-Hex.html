@@ -34,14 +34,15 @@
         <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
       </div>
       <div class="other-websites">
-        <a href="#" >Unit Converters</a>
+        <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
       </div >      
   </header>
 
 
   <main>
-    <div style="text-align: center;">
-    <h2>RGB-Hex Converter</h2>
+    
+    <h2 style="text-align: center;">RGB-Hex Converter</h2>
+    <div class="input-output">
     <div style="margin-bottom: 30px;">
     <label for="red">Red Value: </label>
     <input style="margin-left: 15px;" type="text" id="red-input" placeholder="0-255"></input>
@@ -58,13 +59,16 @@
     <input type="button" id="convert-button" value= "Convert">
     <input type="button" id="reset-button" value= "Reset">
   </div>
-  <div style="margin-bottom: 30px;">
-    <label for="hex-value">The HEX value is: </label>
-    <input type="text" id="hex-value" placeholder="The result will appear here."></input>
-    <h3>Output Color:</h3>
+  <div>
+    <label for="hex-value">HEX value: </label>
+    <input type="text" id="hex-value" placeholder="The result will appear here." readonly></input>
+    <h3 style="text-align: center;">Output Color:</h3>
   </div>
-    <textarea type="text" id="output-color" rows="15" cols="60"></textarea>
+  <div>
+    <textarea type="text" id="output-color" rows="15" cols="60" readonly></textarea>
     </div>
+  </div>
+    
     
   </main>
   <section>
