@@ -12,7 +12,16 @@
 <body>
   <div class="non-footer">
   <header class="navbar">
-    <div style="font-size: 30px;"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+    <div class="dropdown-nav" ><img id="hamburger" style="margin-top: 14px;" src ="Images/menu-24px.svg">
+      <div class="dropdown-content">
+        <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
+        <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
+        <a href="https://my-time-stamp-converter.netlify.app/epochtohuman" target="_blank">Time Converter</a>
+        <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
+        <a href="https://my-number-base-converter.netlify.app/decimaltobinary" target="_blank">Number Base Converter</a>
+
+      </div>
+    </div>
     
     <div class="dropdown-nav">Color Converter <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
       <div class="dropdown-content">
@@ -21,21 +30,8 @@
         </div>
       </div>
 
-      <div class="other-websites">
-        <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
-      </div>
-      <div class="other-websites">
-        <a href="https://my-time-stamp-converter.netlify.app/epochtohuman" target="_blank">Time Converter</a>
-      </div> 
-      <div class="other-websites">
-        <a href="https://my-number-base-converter.netlify.app/decimaltobinary" target="_blank">Number Base Converter</a>
-      </div>
-      <div class="other-websites">
-        <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
-      </div>
-      <div class="other-websites">
-        <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
-      </div >      
+      <div class="util"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+             
   </header>
 
 
@@ -45,15 +41,15 @@
     <div class="input-output">
     <div style="margin-bottom: 30px;">
     <label for="red">Red Value: </label>
-    <input style="margin-left: 15px;" type="text" id="red-input" placeholder="0-255"></input>
+    <input style="margin-left: 15px;" type="text" id="red-input" maxlength="3" placeholder="0-255"></input>
     </div>
     <div style="margin-bottom: 30px;">
     <label for="green">Green Value: </label>
-    <input type="text" id="green-input" placeholder="0-255"></input>
+    <input type="text" id="green-input" maxlength="3" placeholder="0-255"></input>
   </div>
   <div style="margin-bottom: 30px;">
     <label for="blue">Blue Value: </label>
-    <input style="margin-left: 14px;" type="text" id="blue-input" placeholder="0-255"></input>
+    <input style="margin-left: 14px;" type="text" id="blue-input" maxlength="3" placeholder="0-255"></input>
   </div>
   <div style="margin-bottom: 30px;">
     <input type="button" id="convert-button" value= "Convert">
@@ -61,7 +57,7 @@
   </div>
   <div>
     <label for="hex-value">HEX value: </label>
-    <input type="text" id="hex-value" placeholder="The result will appear here." readonly></input>
+    <input type="text" id="hex-value" placeholder="#000000" readonly></input>
     <h3 style="text-align: center;">Output Color:</h3>
   </div>
   <div>
